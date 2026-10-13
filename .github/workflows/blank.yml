@@ -5,15 +5,15 @@ on:
 
 jobs:
   job1:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
-        name: Print Hello
+      - name: Print Hello
         run: echo "Hello"
 
   job2:
    needs: job1
-   runs-on: ubunto-latest
+   runs-on: ubuntu-latest
    steps:
-       name: Print Success
+     - name: Print Success
        run: echo "The first job succeeded!"
        
