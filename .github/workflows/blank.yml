@@ -9,7 +9,6 @@ jobs:
     steps:
         name: Print Hello
         run: echo "Hello"
-
  job2:
    needs: job1
    runs-on: ubunto-latest
